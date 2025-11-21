@@ -72,6 +72,19 @@
         text-align: center;
       }
 
+      .set-label {
+        margin: 2rem 0 0.25rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #0f172a;
+        letter-spacing: 0.08em;
+        text-align: center;
+      }
+
+      .set-difference {
+        font-weight: 700;
+      }
+
   </style>
 </head>
 <body>
@@ -83,49 +96,51 @@
       <h1 class="title is-2">SenCache: Accelerating Diffusion Model Inference via<br>Sensitivity-Aware Caching</h1>
     </div>
 
-
+    <p class="set-label"><span class="set-difference">Difference:</span> the dog and the vase</p>
     <div class="video-compare-container">
       <div class="video-item">
-        <p class="video-description">Baseline (WAN 2.1)</p>
+        <p class="video-description">Baseline (CogVideoX)</p>
         <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/baseline/0042_A person climbing a vertical rock face searching f.mp4" type="video/mp4">
+          <source src="./CogVid/0061_A black dog sits beside a red vase on a table.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-item">
         <p class="video-description">MagCache</p>
         <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/magcache/0042_A person climbing a vertical rock face searching f_E012_K4_R02.mp4" type="video/mp4">
+          <source src="./CogVid/magcache_0061_A black dog sits beside a red vase on a table.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-item">
         <p class="video-description">SenCache (Ours)</p>
         <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/ours/0042_A person climbing a vertical rock face searching f_OurCache_S0005_M012_K3.mp4" type="video/mp4">
+          <source src="./CogVid/0061_A black dog sits beside a red vase on a table_OurCache_S0005_M06_K3.mp4" type="video/mp4">
         </video>
       </div>
     </div>
 
+    <p class="set-label"><span class="set-difference">Difference:</span> the character and the background</p>
     <div class="video-compare-container">
       <div class="video-item">
-        <p class="video-description">Baseline (WAN 2.1)</p>
+        <p class="video-description">Baseline (LTX-Video)</p>
         <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/baseline/0105_a snowboard and a sports ball.mp4" type="video/mp4">
+          <source src="./ltx/baseline_0635_Gwen Stacy reading a book zoom out.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-item">
         <p class="video-description">MagCache</p>
         <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/magcache/0105_a snowboard and a sports ball_E012_K4_R02.mp4" type="video/mp4">
+          <source src="./ltx/magcache_0635_Gwen Stacy reading a book zoom out_E00005_K2_R02.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-item">
         <p class="video-description">SenCache (Ours)</p>
         <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/ours/0105_a snowboard and a sports ball_OurCache_S0005_M013_K3.mp4" type="video/mp4">
+          <source src="./ltx/mycache_0635_Gwen Stacy reading a book zoom out_S001_M07_R002.mp4" type="video/mp4">
         </video>
       </div>
     </div>
 
+    <p class="set-label"><span class="set-difference">Difference:</span> the bird has a third wing in the middle video</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (WAN 2.1)</p>
@@ -147,6 +162,95 @@
       </div>
     </div>
 
+    <p class="set-label"><span class="set-difference">Difference:</span> the treasurer</p>
+    <div class="video-compare-container">
+      <div class="video-item">
+        <p class="video-description">Baseline (WAN 2.1)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/baseline/0177_An ancient tomb long abandoned became a target for.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">MagCache</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/magcache/0177_An ancient tomb long abandoned became a target for_E012_K4_R02.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">SenCache (Ours)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/ours/0177_An ancient tomb long abandoned became a target for_OurCache_S0005_M013_K3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <p class="set-label"><span class="set-difference">Difference:</span> the building</p>
+    <div class="video-compare-container">
+      <div class="video-item">
+        <p class="video-description">Baseline (WAN 2.1)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/baseline/0922_The camera orbits around Statue of Liberty the cam.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">MagCache</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/magcache/0922_The camera orbits around Statue of Liberty the cam_E012_K4_R02.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">SenCache (Ours)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/ours/0922_The camera orbits around Statue of Liberty the cam_OurCache_S0005_M013_K3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <p class="set-label"><span class="set-difference">Difference:</span> the mountaineer</p>
+    <div class="video-compare-container">
+      <div class="video-item">
+        <p class="video-description">Baseline (WAN 2.1)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/baseline/0042_A person climbing a vertical rock face searching f.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">MagCache</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/magcache/0042_A person climbing a vertical rock face searching f_E012_K4_R02.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">SenCache (Ours)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/ours/0042_A person climbing a vertical rock face searching f_OurCache_S0005_M012_K3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <p class="set-label"><span class="set-difference">Difference:</span> the shoes</p>
+    <div class="video-compare-container">
+      <div class="video-item">
+        <p class="video-description">Baseline (WAN 2.1)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/baseline/0105_a snowboard and a sports ball.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">MagCache</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/magcache/0105_a snowboard and a sports ball_E012_K4_R02.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item">
+        <p class="video-description">SenCache (Ours)</p>
+        <video autoplay muted loop playsinline>
+          <source src="./static/videos/Wan/ours/0105_a snowboard and a sports ball_OurCache_S0005_M013_K3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <p class="set-label"><span class="set-difference">Difference:</span> the roof of the chalet</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (WAN 2.1)</p>
@@ -168,6 +272,7 @@
       </div>
     </div>
 
+    <p class="set-label"><span class="set-difference">Difference:</span> the airplane in the background</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (WAN 2.1)</p>
@@ -190,27 +295,7 @@
     </div>
 
 
-    <div class="video-compare-container">
-      <div class="video-item">
-        <p class="video-description">Baseline (LTX-Video)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./ltx/baseline_0635_Gwen Stacy reading a book zoom out.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">MagCache</p>
-        <video autoplay muted loop playsinline>
-          <source src="./ltx/magcache_0635_Gwen Stacy reading a book zoom out_E00005_K2_R02.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">SenCache (Ours)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./ltx/mycache_0635_Gwen Stacy reading a book zoom out_S001_M07_R002.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
+    <p class="set-label"><span class="set-difference">Difference:</span> the parrot</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (LTX-Video)</p>
@@ -233,28 +318,7 @@
     </div>
 
 
-    <div class="video-compare-container">
-      <div class="video-item">
-        <p class="video-description">Baseline (CogVideoX)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./CogVid/0061_A black dog sits beside a red vase on a table.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">MagCache</p>
-        <video autoplay muted loop playsinline>
-          <source src="./CogVid/magcache_0061_A black dog sits beside a red vase on a table.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">SenCache (Ours)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./CogVid/0061_A black dog sits beside a red vase on a table_OurCache_S0005_M06_K3.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-
+    <p class="set-label"><span class="set-difference">Difference:</span> the eyes of the pinguin</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (CogVideoX)</p>
@@ -276,6 +340,7 @@
       </div>
     </div>
 
+    <p class="set-label"><span class="set-difference">Difference:</span> the color of the woman's top</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (WAN 2.1)</p>
@@ -297,29 +362,7 @@
       </div>
     </div>
 
-    <div class="video-compare-container">
-      <div class="video-item">
-        <p class="video-description">Baseline (WAN 2.1)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/baseline/0177_An ancient tomb long abandoned became a target for.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">MagCache</p>
-        <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/magcache/0177_An ancient tomb long abandoned became a target for_E012_K4_R02.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">SenCache (Ours)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/ours/0177_An ancient tomb long abandoned became a target for_OurCache_S0005_M013_K3.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    
-
+    <p class="set-label"><span class="set-difference">Difference:</span> the brand of the machine</p>
     <div class="video-compare-container">
       <div class="video-item">
         <p class="video-description">Baseline (WAN 2.1)</p>
@@ -337,27 +380,6 @@
         <p class="video-description">SenCache (Ours)</p>
         <video autoplay muted loop playsinline>
           <source src="./static/videos/Wan/ours/0901_a hair drier on the right of a toothbrush front vi_OurCache_S0005_M013_K3.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    <div class="video-compare-container">
-      <div class="video-item">
-        <p class="video-description">Baseline (WAN 2.1)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/baseline/0922_The camera orbits around Statue of Liberty the cam.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">MagCache</p>
-        <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/magcache/0922_The camera orbits around Statue of Liberty the cam_E012_K4_R02.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="video-item">
-        <p class="video-description">SenCache (Ours)</p>
-        <video autoplay muted loop playsinline>
-          <source src="./static/videos/Wan/ours/0922_The camera orbits around Statue of Liberty the cam_OurCache_S0005_M013_K3.mp4" type="video/mp4">
         </video>
       </div>
     </div>
